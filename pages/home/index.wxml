@@ -31,4 +31,19 @@
 
   <button wx:if="{{ !isLogin }}" size="mini" type="warn" class="login-btn" bindtap="goLogin">授权登录</button>
 </view>
+
+<!-- 点餐 -->
+<view class="menu-banner">
+  <view class="location">
+    <image src="../../assets/images/menu.png" />
+    <view class="name">蜜雪冰城(国贸店)</view>
+  </view>
+  <image src="../../assets/images/menu-banner.jpg" class="menu-card" bindtap="onMunuCardTap"/>
+</view>
+
+<view class="banner-list">
+  <image src="../../assets/images/banner-1.jpg" bindtap="onTodayTap"/>
+  <image src="../../assets/images/banner-2.jpg" />
+  <image src="../../assets/images/banner-3.jpg" />
+</view>
 </view>

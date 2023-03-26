@@ -52,7 +52,6 @@
     align-items: center;
     padding: 20rpx 25rpx 20rpx 30rpx;
     box-sizing: border-box;
-    margin-bottom: 44rpx;
     .vip-box {
       display: flex;
       align-items: center;
@@ -99,6 +98,47 @@
       &:active {
           opacity: 0.6;
       }
+    }
+  }
+
+  .menu-banner {
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    margin-top: 44rpx;
+    .location {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16rpx;
+      image {
+        width: 28rpx;
+        height: 28rpx;
+      }
+      .name {
+        font-size: 24rpx;
+        margin-left: 4rpx;
+      }
+    }
+    .menu-card {
+      width: 688rpx;
+      height: 350rpx;
+      border-radius: 16rpx;
+      box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    }
+  }
+
+  .banner-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    margin-top: 32rpx;
+    image {
+      width: 215rpx;
+      height: 175rpx;
+      border-radius: 16rpx;
+      box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
     }
   }
 }

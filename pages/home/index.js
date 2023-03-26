@@ -46,6 +46,16 @@ Page({
       })
     }
   },
+  onMunuCardTap() {
+    wx.switchTab({
+      url: '/pages/menu/index',
+    })
+  },
+  onTodayTap(){
+    wx.navigateTo({
+      url: '/pages/webview/index?url=https://baidu.com',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
