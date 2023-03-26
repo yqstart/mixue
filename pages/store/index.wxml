@@ -17,7 +17,23 @@
     <image src="../../assets/images/current.png" class="current-icon" bindtap="toCurrent" />
   </view>
   <view class="collaspe-area">
+    收起地图
   </view>
-  <scroll-view class="store-list">
+  <scroll-view class="store-list" scroll-y>
+   <view class="store-box" wx:for="{{ 6 }}" wx:key="index">
+    <view class="info-area">
+      <view class="name">蜜雪冰城(三里屯SOHO店)</view>
+      <view class="info">北京市朝阳区工人体育场北路8号院3号楼3-109号</view>
+      <view class="info">营业时间: 09:00 ~ 22:00</view>
+      <view class="tag">营业中</view>
+    </view>
+    <view class="location-area">
+      <view class="distance">距离10.3km</view>
+      <view class="action-area">
+        <image src="../../assets/images/location.jpg" />
+        <image src="../../assets/images/phone.jpg" />
+      </view>
+    </view>
+   </view>
   </scroll-view>
 </view>

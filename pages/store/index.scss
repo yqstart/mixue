@@ -1,3 +1,4 @@
+@import '../../style/global.scss';
 .store {
   .header {
     width: 100%;
@@ -33,5 +34,68 @@
       bottom: 22rpx;
     }
   }
-  
+  .collaspe-area {
+    width: 100%;
+    height: 70rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24rpx;
+    color: $gray-text-color;
+  }
+
+  .store-list {
+    width: 100%;
+    padding: 0 20rpx;
+    height: calc(100vh - 700rpx);
+    box-sizing: border-box;
+    .store-box {
+      background-color: #fff;
+      display: flex;
+      padding: 20rpx;
+      margin: 16rpx 0;
+      align-items: center;
+      .info-area {
+        flex: 1;
+        border-right: 1rpx solid #eeeeee;
+        .name {
+          font-size: 28rpx;
+          font-weight: bold;
+          margin-bottom: 12rpx;
+        }
+        .info {
+          font-size: 20rpx;
+          color: $gray-text-color;
+          margin-bottom: 12rpx;
+        }
+        .tag {
+          background-color: $primary-color;
+          font-size: 20rpx;
+          color: #fff;
+          padding: 8rpx;
+          display: inline-block;
+        }
+      }
+      .location-area {
+        width: 125rpx;
+        flex-shrink: 0;
+        margin-left: 25rpx;
+        display: flex;
+        flex-direction: column;
+        .distance {
+          margin-bottom: 35rpx;
+          font-size: 24rpx;
+          color: $gray-text-color;
+        }
+        .action-area {
+          display: flex;
+          justify-content: space-around;
+          image {
+            width: 46rpx;
+            height: 46rpx;
+          }
+        }
+      }
+    } 
+  }
 }
