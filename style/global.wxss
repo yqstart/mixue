@@ -1,0 +1,13 @@
+.login-btn {
+  background-color: #E60012;
+  width: 150rpx;
+  height: 65rpx;
+  font-size: 26rpx;
+  line-height: 65rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.login-btn:active {
+  opacity: 0.6;
+}

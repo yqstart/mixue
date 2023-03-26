@@ -1,1 +1,119 @@
-/* pages/me/index.wxss */
+.me {
+  box-sizing: border-box;
+  padding: 180rpx 30rpx 0rpx 30rpx;
+  background: linear-gradient(to bottom, #fbe7e6, #fff);
+  height: 100vh;
+}
+
+.me .user-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.me .user-area .user-box {
+  display: flex;
+  align-items: center;
+}
+
+.me .user-area .user-box .avatar {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.me .user-area .user-box .name {
+  font-size: 28rpx;
+  margin-left: 24rpx;
+}
+
+.me .user-area .login-btn {
+  background-color: #E60012;
+  width: 150rpx;
+  height: 65rpx;
+  font-size: 26rpx;
+  line-height: 65rpx;
+  border-radius: 10rpx;
+  color: #fff;
+  margin: 0;
+}
+
+.me .user-area .login-btn:active {
+  opacity: 0.6;
+}
+
+.me .card-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 28rpx 0;
+}
+
+.me .card-container .card {
+  width: 330rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 23rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.me .card-container .card .meta .count {
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+.me .card-container .card .meta .name {
+  font-size: 18rpx;
+  color: #777777;
+}
+
+.me .card-container .card .icon {
+  width: 72rpx;
+  height: 72rpx;
+}
+
+.me .list-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.me .list-items .item {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 36rpx 30rpx;
+}
+
+.me .list-items .item .content {
+  display: flex;
+  align-items: center;
+}
+
+.me .list-items .item .content .icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 25rpx;
+}
+
+.me .list-items .item .content .label {
+  font-size: 28rpx;
+}
+
+.me .list-items .item .left-arrow {
+  font-size: 24rpx;
+  display: flex;
+}
+
+.me .list-items.app-download {
+  margin-top: 28rpx;
+}
+
+.me .list-items.app-download .item {
+  border-radius: 10rpx;
+}
+
+.me .list-items.app-download .tips {
+  color: #777777;
+  margin-right: 8rpx;
+}

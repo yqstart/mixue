@@ -1,2 +1,69 @@
-<!--pages/me/index.wxml-->
-<text>pages/me/index.wxml</text>
+<view class="me">
+  <view class="user-area">
+    <view class="user-box">
+      <image src="../../assets/images/me-avatar.png" class="avatar" />
+      <view class="name">{{ mobile || '登录获得更多会员权益'}}</view>
+    </view>
+    <button wx:if="{{ !mobile }}" size="mini" class="login-btn" bindtap="goLogin">授权登录</button>
+  </view>
+  <view class="card-container">
+    <view class="card">
+      <view class="meta">
+        <view class="count">54
+        </view>
+        <view class="name">雪王币</view>
+      </view>
+      <image class="icon" src="../../assets/images/me-coin.png" />
+    </view>
+    <view class="card">
+      <view class="meta">
+        <view class="count">2
+        </view>
+        <view class="name">优惠券</view>
+      </view>
+      <image class="icon" src="../../assets/images/me-coupon.png" />
+    </view>
+  </view>
+  <view class="list-items">
+    <view class="item">
+      <view class="content">
+        <image class="icon" src="../../assets/images/qr-code.png" />
+        <view class="label">兑换码</view>
+      </view>
+      <view class="left-arrow">></view>
+    </view>
+    <view class="item">
+      <view class="content">
+        <image class="icon" src="../../assets/images/lock.png" />
+        <view class="label">隐私政策</view>
+      </view>
+      <view class="left-arrow">></view>
+    </view>
+    <view class="item">
+      <view class="content">
+        <image class="icon" src="../../assets/images/paper.png" />
+        <view class="label">用户协议</view>
+      </view>
+      <view class="left-arrow">></view>
+    </view>
+    <view class="item">
+      <view class="content">
+        <image class="icon" src="../../assets/images/xuke.png" />
+        <view class="label">经营信息公示</view>
+      </view>
+      <view class="left-arrow">></view>
+    </view>
+  </view>
+
+  <view class="list-items app-download">
+    <view class="item">
+      <view class="content">
+        <image class="icon" src="../../assets/images/app.png" />
+        <view class="label">蜜雪冰城APP</view>
+      </view>
+      <view class="left-arrow">
+        <view class="tips">下载APP体验更佳</view>>
+      </view>
+    </view>
+  </view>
+</view>

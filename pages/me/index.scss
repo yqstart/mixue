@@ -1,0 +1,105 @@
+@import '../../style/global.scss';
+
+.me {
+  box-sizing: border-box;
+  padding: 180rpx 30rpx 0rpx 30rpx;
+  background: linear-gradient(to bottom, #fbe7e6, #fff);
+  height: 100vh;
+  .user-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .user-box {
+      display: flex;
+      align-items: center;
+      .avatar {
+        width: 120rpx;
+        height: 120rpx;
+      }
+      .name {
+        font-size: 28rpx;
+        margin-left: 24rpx;
+      }
+    }
+    .login-btn {
+      background-color: $primary-color;
+      width: 150rpx;
+      height: 65rpx;
+      font-size: 26rpx;
+      line-height: 65rpx;
+      border-radius: 10rpx;
+      color: #fff;
+      margin: 0;
+      &:active {
+          opacity: 0.6;
+      }
+    }
+    
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 28rpx 0;
+    .card {
+      width: 330rpx;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 10rpx;
+      padding: 23rpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .meta {
+        .count {
+          font-size: 24rpx;
+          font-weight: bold;
+        }
+        .name {
+          font-size: 18rpx;
+          color: $gray-text-color;
+        }
+      }
+      .icon {
+        width: 72rpx;
+        height: 72rpx;
+      }
+    }
+  }
+  
+  .list-items {
+    display: flex;
+    flex-direction: column;
+    .item {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 36rpx 30rpx;
+      .content {
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 40rpx;
+          height: 40rpx;
+          margin-right: 25rpx;
+        }
+        .label {
+          font-size: 28rpx;
+        }
+      }
+      .left-arrow {
+        font-size: 24rpx;
+        display: flex;
+      }
+    }
+    &.app-download {
+      margin-top: 28rpx;
+      .item {
+        border-radius: 10rpx;
+      }
+      .tips {
+        color: $gray-text-color;
+        margin-right: 8rpx;
+      }
+    }
+  }
+}

@@ -1,13 +1,27 @@
 // pages/me/index.js
+const computedBehavior = require('miniprogram-computed').behavior
 Page({
-
+  behaviors: [computedBehavior],
   /**
    * 页面的初始数据
    */
-  data: {
-
+  computed: {
+    desenstiveMobile(data) {
+      let { mobile } = data
+      if(mobile) {
+        mobile = mobile.replace(/^(\d{3})\d{6}(\d{2})$/, '$1******$2')
+      }
+      return mobile
+    }
   },
-
+  data: {
+    mobile: ''
+  },
+  goLogin() {
+    wx.navigateTo({
+      url: '/pages/login/index',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -26,7 +40,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      mobile: wx.getStorageSync('phoneNumber')
+    })
   },
 
   /**

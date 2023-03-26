@@ -1,0 +1,32 @@
+lockfileVersion: 5.4
+
+specifiers:
+  fast-deep-equal: ^3.1.3
+  miniprogram-computed: ^4.4.0
+  rfdc: ^1.3.0
+
+dependencies:
+  fast-deep-equal: 3.1.3
+  miniprogram-computed: 4.4.0
+  rfdc: 1.3.0
+
+packages:
+
+  /fast-deep-equal/2.0.1:
+    resolution: {integrity: sha512-bCK/2Z4zLidyB4ReuIsvALH6w31YfAQDmXMqMx6FyfHqvBxtjC0eRumeSu4Bs3XtXwpyIywtSTrVT99BxY1f9w==}
+    dev: false
+
+  /fast-deep-equal/3.1.3:
+    resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+    dev: false
+
+  /miniprogram-computed/4.4.0:
+    resolution: {integrity: sha512-th9y1Ua7H6rC47Vs20/QFC6zlq/A/92zbKrCxkJNlXf7xwNdg86BRRFvccR8yIwVXRXjMYUrcsVDq6bwzbE0Cg==}
+    dependencies:
+      fast-deep-equal: 2.0.1
+      rfdc: 1.3.0
+    dev: false
+
+  /rfdc/1.3.0:
+    resolution: {integrity: sha512-V2hovdzFbOi77/WajaSMXk2OLm+xNIeQdMMuB7icj7bk6zi2F8GGAxigcnDFpJHbNyNcgyJDiP+8nOrY5cZGrA==}
+    dev: false

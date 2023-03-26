@@ -29,7 +29,7 @@
     <view class="currency">51</view>
   </view>
 
-  <button wx:if="{{ !isLogin }}" size="mini" type="warn" class="login-btn" bindtap="goLogin">授权登录</button>
+  <button wx:if="{{ !isLogin }}" size="mini" class="login-btn" bindtap="goLogin">授权登录</button>
 </view>
 
 <!-- 点餐 -->
