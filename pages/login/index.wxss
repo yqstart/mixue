@@ -1,1 +1,44 @@
-/* pages/login/index.wxss */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 176rpx;
+}
+
+.login image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-bottom: 22rpx;
+}
+
+.login .logo-title {
+  margin-bottom: 160rpx;
+}
+
+.login .intro {
+  font-size: 37rpx;
+  font-weight: bold;
+  margin-bottom: 84rpx;
+}
+
+.login .login-tin {
+  font-size: 20rpx;
+  color: #777777;
+  margin-bottom: 12rpx;
+}
+
+.login .login-btn {
+  width: 590rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #E60012;
+  border-radius: 15rpx;
+  color: #fff;
+  font-size: 35rpx;
+  margin-bottom: 42rpx;
+}
+
+.login .cancle {
+  color: #aaaaaa;
+  font-size: 30rpx;
+}

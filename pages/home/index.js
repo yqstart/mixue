@@ -9,7 +9,8 @@ Page({
   data: {
     swiperList: [],
     current: 0,
-    isLogin: false
+    isLogin: false,
+    memberInfo: false
   },
 
   onSweiperChange(event) {
@@ -29,10 +30,21 @@ Page({
       })
     }
   },
-  login() {
+  goLogin() {
     wx.navigateTo({
       url: '/pages/login/index',
     })
+  },
+  loadMemberInfo() {
+    if(wx.getStorageSync('phoneNumber')) {
+      this.setData({
+        isLogin: true
+      })
+    } else {
+      this.setData({
+        isLogin: false
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载
@@ -42,6 +54,7 @@ Page({
     this.setData({
       swiperList: result.data
     })
+    this.loadMemberInfo()
   },
 
   /**
@@ -55,7 +68,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.loadMemberInfo()
   },
 
   /**

@@ -1,0 +1,45 @@
+@import '../../style/global.scss';
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 176rpx;
+  image {
+    width: 150rpx;
+    height: 150rpx;
+    margin-bottom: 22rpx;
+  }
+
+  .logo-title {
+    margin-bottom: 160rpx;
+  }
+
+  .intro {
+    font-size: 37rpx;
+    font-weight: bold;
+    margin-bottom: 84rpx;
+  }
+
+  .login-tin {
+    font-size: 20rpx;
+    color: $gray-text-color;
+    margin-bottom: 12rpx;
+  }
+
+  .login-btn {
+    width: 590rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    background-color: $primary-color;
+    border-radius: 15rpx;
+    color: #fff;
+    font-size: 35rpx;
+    margin-bottom: 42rpx;
+  }
+
+  .cancle {
+    color: #aaaaaa;
+    font-size: 30rpx;
+  }
+}

@@ -81,7 +81,7 @@
 
 .home .member-area .meta .tips {
   margin-top: 14rpx;
-  color: gray;
+  color: #777777;
   font-size: 24rpx;
 }
 

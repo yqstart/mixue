@@ -5,14 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
+  },
 
+  login(event) {
+    wx.setStorageSync('phoneNumber', '1304120xxxx')
+    wx.navigateBack({
+      delta: 0
+    })
+    // 需要企业认证
+    // const { cloundId } = event.detail
+    // wx.cloud.callFunction({
+    //   name: 'get-phone-number',
+    //   data: {
+    //     weRunData: wx.clound.cloundId(cloundId)
+    //   }
+    // }).then(res => {
+    //   console.log(res, 'res')
+    //   wx.setStorageSync('phoneNumber', res.result)
+    //   wx.navigateBack({
+    //     delta: 0
+    //   })
+    // })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
   },
 
   /**
