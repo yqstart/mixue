@@ -48,7 +48,7 @@ Page({
   },
   onMunuCardTap() {
     wx.switchTab({
-      url: '/pages/menu/index',
+      url: '/pages/store/index',
     })
   },
   onTodayTap(){
