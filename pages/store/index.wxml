@@ -3,7 +3,18 @@
     <tabs tabArr="{{ [{value: 'nearby', label: '附近门店'}, { value: 'recent', label: '常去门店'}] }}"></tabs>
     <input type="text" class="search" placeholder="搜索门店"/>
   </view>
-  <view class="map">
+  <view class="map-container">
+    <map 
+      id="store-map"
+      class="store-map"
+      longitude="{{ longitude }}"
+      latitude="{{ latitude }}"
+      show-location
+      show-compass
+      markers="{{ markers }}"
+    >
+    </map>
+    <image src="../../assets/images/current.png" class="current-icon" bindtap="toCurrent" />
   </view>
   <view class="collaspe-area">
   </view>

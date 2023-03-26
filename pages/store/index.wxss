@@ -1,5 +1,5 @@
 .store .header {
-  width: 750rpx;
+  width: 100%;
   padding: 0 30rpx;
   display: flex;
   justify-content: space-between;
@@ -17,4 +17,21 @@
   box-sizing: border-box;
   font-size: 28rpx;
   color: #d1d1d1;
+}
+
+.store .map-container {
+  position: relative;
+}
+
+.store .map-container .store-map {
+  width: 100%;
+  height: 520rpx;
+}
+
+.store .map-container .current-icon {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  right: 18rpx;
+  bottom: 22rpx;
 }

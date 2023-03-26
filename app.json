@@ -40,6 +40,11 @@
       "selectedIconPath": "./assets/images/me-selected.png"
     }]
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于匹配最佳门店"
+    }
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
