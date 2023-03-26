@@ -8,7 +8,8 @@ Page({
    */
   data: {
     swiperList: [],
-    current: 0
+    current: 0,
+    isLogin: false
   },
 
   onSweiperChange(event) {
@@ -27,6 +28,11 @@ Page({
         url: `/pages/product/details?id=${item.target}`,
       })
     }
+  },
+  login() {
+    wx.navigateTo({
+      url: '/pages/login/index',
+    })
   },
   /**
    * 生命周期函数--监听页面加载

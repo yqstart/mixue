@@ -1,3 +1,9 @@
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .home .swiper-container {
   width: 750rpx;
   height: 630rpx;
@@ -18,7 +24,7 @@
 .home .swiper-container .dots {
   position: absolute;
   left: 50rpx;
-  bottom: 50rpx;
+  bottom: 58rpx;
   display: inline-flex;
 }
 
@@ -35,4 +41,75 @@
 .home .swiper-container .dots .dot.active {
   width: 25rpx;
   opacity: 1;
+}
+
+.home .member-area {
+  width: 688rpx;
+  height: 174rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-top: -40rpx;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 25rpx 20rpx 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 44rpx;
+}
+
+.home .member-area .vip-box {
+  display: flex;
+  align-items: center;
+}
+
+.home .member-area .vip-box image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-right: 26rpx;
+  flex-shrink: 0;
+}
+
+.home .member-area .meta .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 18rpx;
+}
+
+.home .member-area .meta .tips {
+  margin-top: 14rpx;
+  color: gray;
+  font-size: 24rpx;
+}
+
+.home .member-area .coin-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .member-area .coin-box image {
+  width: 100rpx;
+  height: 70rpx;
+}
+
+.home .member-area .coin-box .currency {
+  color: #d32d25;
+  margin-left: 25rpx;
+}
+
+.home .member-area .login-btn {
+  background-color: #E60012;
+  width: 150rpx;
+  height: 65rpx;
+  font-size: 26rpx;
+  line-height: 65rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.home .member-area .login-btn:active {
+  opacity: 0.6;
 }

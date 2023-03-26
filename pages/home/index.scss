@@ -1,4 +1,9 @@
+@import '../../style/global.scss';
+
 .home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   .swiper-container {
     width: 750rpx;
     height: 630rpx;
@@ -15,7 +20,7 @@
     .dots {
       position: absolute;
       left: 50rpx;
-      bottom: 50rpx;
+      bottom: 58rpx;
       display: inline-flex;
       .dot {
         width: 8rpx;
@@ -29,6 +34,70 @@
           width: 25rpx;
           opacity: 1;
         }
+      }
+    }
+  }
+
+  .member-area {
+    width: 688rpx;
+    height: 174rpx;
+    border-radius: 16rpx;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin-top: -40rpx;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20rpx 25rpx 20rpx 30rpx;
+    box-sizing: border-box;
+    margin-bottom: 44rpx;
+    .vip-box {
+      display: flex;
+      align-items: center;
+      image {
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 50%;
+        margin-right: 26rpx;
+        flex-shrink: 0;
+      }
+    }
+    .meta {
+      .title {
+        font-size: 32rpx;
+        font-weight: bold;
+        margin-bottom: 18rpx;
+      }
+      .tips {
+        margin-top: 14rpx;
+        color: gray;
+        font-size: 24rpx;
+      }
+    }
+    .coin-box {
+      display: flex;
+      flex-direction: column;
+      image {
+        width: 100rpx;
+        height: 70rpx;
+      }
+      .currency {
+        color: #d32d25;
+        margin-left: 25rpx;
+      }
+    }
+    .login-btn {
+      background-color: $primary-color;
+      width: 150rpx;
+      height: 65rpx;
+      font-size: 26rpx;
+      line-height: 65rpx;
+      border-radius: 10rpx;
+      color: #fff;
+      &:active {
+          opacity: 0.6;
       }
     }
   }
