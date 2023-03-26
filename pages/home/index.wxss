@@ -1,1 +1,38 @@
-/* pages/home/index.wxss */
+.home .swiper-container {
+  width: 750rpx;
+  height: 630rpx;
+  position: relative;
+}
+
+.home .swiper-container .swiper {
+  height: 100%;
+}
+
+.home .swiper-container .swiper image {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.home .swiper-container .dots {
+  position: absolute;
+  left: 50rpx;
+  bottom: 50rpx;
+  display: inline-flex;
+}
+
+.home .swiper-container .dots .dot {
+  width: 8rpx;
+  height: 8rpx;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 4rpx;
+  margin-left: 4rpx;
+  transition: all .5s;
+}
+
+.home .swiper-container .dots .dot.active {
+  width: 25rpx;
+  opacity: 1;
+}
